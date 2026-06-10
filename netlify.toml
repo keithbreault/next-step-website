@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+
+# Single-page static site — no build step needed.
+# Netlify Forms picks up the form named "contact" automatically.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
