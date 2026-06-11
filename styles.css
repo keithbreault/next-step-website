@@ -380,9 +380,10 @@ body.no-emblems .contact-motif{display:none}
   .hero{padding-top:clamp(118px,16vh,158px)}
   .btn{min-height:46px}
   .hero-grid{grid-template-columns:1fr;max-width:46rem}
-  .hero-figure{display:none}
-  .hero-mark-big{display:block}
-  /* hide background watermark — hero-mark-big already shows the logo inline */
+  /* show the hero photo on mobile — stack copy above, photo below */
+  .hero-figure{display:block;aspect-ratio:16/9;margin-top:2em;border-radius:var(--radius)}
+  .hero-mark-big{display:none}
+  /* hide background watermark on mobile */
   .hero-motif{display:none}
   .free-inner,.split,.contact-grid{grid-template-columns:1fr}
   /* show photo below text in the problem split on mobile */
