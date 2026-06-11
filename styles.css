@@ -417,20 +417,20 @@ body.no-emblems .contact-motif{display:none}
   border-top:1px solid var(--line-soft);
 }
 .stack-row{
-  display:grid;grid-template-columns:1fr auto 1.05fr;gap:clamp(14px,3vw,44px);
+  display:grid;grid-template-columns:1fr auto 1.05fr;gap:clamp(8px,1.2vw,20px);
   align-items:center;
   padding:clamp(18px,2.3vw,26px) 0;
   border-bottom:1px solid var(--line-soft);
 }
 .stack-burden{
-  color:var(--ink-mute);font-size:calc(16.5px * var(--scale));
+  color:var(--ink-soft);font-size:calc(19px * var(--scale));
   text-wrap:pretty;
 }
 .stack-arrow{color:var(--accent);display:grid;place-items:center;opacity:.8}
 .stack-arrow svg{width:22px;height:22px}
 .stack-do{
   display:flex;align-items:center;gap:13px;
-  color:var(--ink);font-size:calc(18px * var(--scale));font-weight:600;
+  color:var(--ink);font-size:calc(21px * var(--scale));font-weight:600;
   font-family:var(--head-font);font-weight:var(--head-weight);letter-spacing:-.005em;
 }
 .stack-do .tick{
