@@ -268,6 +268,16 @@ body.no-emblems .contact-motif{display:none}
   color:var(--mint);margin-bottom:1.1em;flex:none;
 }
 
+/* ---------- Problem section (text-only) ---------- */
+.problem-body{max-width:54ch}
+.problem-body h2{font-size:clamp(28px,4vw,52px);margin-bottom:.5em}
+.problem-body .point{font-size:calc(20px * var(--scale));color:var(--ink);margin-top:.85em}
+.problem-body p:not(.point){font-size:calc(18px * var(--scale));margin-top:.8em;max-width:52ch}
+
+/* ---------- Photo interlude ---------- */
+.interlude-figure{aspect-ratio:16/9;max-width:860px;margin-inline:auto;border-radius:var(--radius);overflow:hidden}
+.interlude-figure .figure-img{border-radius:0}
+
 /* ---------- Wise choices / feature split ---------- */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,80px);align-items:center}
 .split-figure{aspect-ratio:5/4;width:100%}
