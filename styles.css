@@ -379,15 +379,12 @@ body.no-emblems .contact-motif{display:none}
 @media (max-width:900px){
   .hero{padding-top:clamp(118px,16vh,158px)}
   .btn{min-height:46px}
-  .hero-grid{grid-template-columns:1fr;max-width:46rem}
-  /* show the hero photo on mobile — stack copy above, photo below */
-  .hero-figure{display:block;aspect-ratio:16/9;margin-top:2em;border-radius:var(--radius)}
-  .hero-mark-big{display:none}
-  /* hide background watermark on mobile */
   .hero-motif{display:none}
+  .hero-grid{grid-template-columns:1fr;max-width:46rem}
+  .hero-figure{display:block;order:2;width:100%;max-width:24rem;margin-top:10px}
+  .hero-mark-big{display:none}
   .free-inner,.split,.contact-grid{grid-template-columns:1fr}
-  /* show photo below text in the problem split on mobile */
-  .split-figure{order:1;max-width:100%}
+  .split-figure{order:-1;max-width:30rem}
   .review-grid{grid-template-columns:repeat(2,1fr)}
   .nav .navlink{display:none}
   .menu-toggle{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);color:var(--ink)}
@@ -395,24 +392,14 @@ body.no-emblems .contact-motif{display:none}
   .nav.open .navlink{display:block;padding:12px 10px;border-radius:var(--radius-sm)}
   .nav.open .menu-toggle{display:none}
   .nav.open .btn{display:none}
-  /* tighten section spacing on tablet/mobile */
-  .section-pad{padding-block:clamp(48px,7vw,80px)}
-  /* reduce logo height so header doesn't dominate mobile viewport */
-  .brand img{height:72px}
-  .scrolled .brand img{height:60px}
-  /* hero top padding matches smaller header */
-  .hero{padding-top:clamp(100px,14vh,130px)}
 }
 @media (max-width:560px){
   .review-grid{grid-template-columns:1fr}
-  .hero{padding-top:88px}
+  .hero{padding-top:104px}
   .hero h1{font-size:clamp(34px,10vw,52px)}
   .how-head h2{font-size:clamp(28px,7.5vw,40px)}
+  .footer-cols{gap:28px 40px}
   .footer-top{flex-direction:column}
-  /* tighter section padding on small phones */
-  .section-pad{padding-block:40px}
-  /* tighter eyebrow-to-heading gap */
-  .eyebrow + h2{margin-top:20px}
 }
 
 /* ============================================================
@@ -469,15 +456,20 @@ body.no-emblems .contact-motif{display:none}
 @media (max-width:760px){
   .stack-head{flex-direction:column;align-items:flex-start;gap:24px}
   .stack-head-photo{width:100%;max-width:340px;margin:0}
-  .stack-row{grid-template-columns:1fr;gap:6px;padding:clamp(16px,4vw,22px) 0}
+  .stack-row{grid-template-columns:1fr;gap:6px;padding:clamp(18px,4vw,24px) 0}
   .stack-arrow{display:none}
-  /* natural HTML order: burden (the problem) first, then what we do — no order swapping */
-  .stack-burden{font-size:calc(15px * var(--scale));color:var(--ink-mute);padding-bottom:2px}
-  .stack-do{font-size:calc(17px * var(--scale))}
+  .stack-burden{
+    order:1;
+    font-size:calc(15px * var(--scale));
+    color:var(--ink-soft);
+    font-weight:500;
+    padding-left:10px;
+    border-left:2px solid color-mix(in oklab,var(--mint) 35%,transparent);
+  }
+  .stack-do{order:2}
 }
 @media (max-width:560px){
   .stack-head h2{font-size:clamp(28px,7.5vw,40px)}
   .stack-kicker{column-gap:.3em;padding:22px 16px}
   .stack-kicker .k-label,.stack-kicker .k-value{font-size:calc(17px * var(--scale))}
 }
-
