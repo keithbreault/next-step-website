@@ -442,6 +442,7 @@ body.no-emblems .contact-motif{display:none}
   display:grid;gap:0;
   border-top:1px solid var(--line-soft);
   padding-block-start:2px;
+  max-width:860px;margin-inline:auto;
 }
 .stack-row{
   display:grid;grid-template-columns:1fr auto 1.05fr;gap:clamp(8px,1.2vw,20px);
@@ -468,6 +469,7 @@ body.no-emblems .contact-motif{display:none}
 .stack-do .tick svg{width:15px;height:15px}
 .stack-kicker{
   display:grid;grid-template-columns:auto auto;justify-content:center;align-items:baseline;
+  max-width:860px;margin-inline:auto;
   column-gap:.4em;row-gap:.4em;
   margin-top:clamp(56px,8vw,104px);
   padding:clamp(22px,3vw,32px);
