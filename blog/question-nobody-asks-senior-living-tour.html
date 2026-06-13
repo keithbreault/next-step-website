@@ -19,9 +19,15 @@
 <style>
   /* ---- Article scaffold ---- */
   .article-hero{
-    padding-top: clamp(110px,14vh,148px);
+    padding-top: clamp(200px,22vh,260px);
     padding-bottom: clamp(48px,7vw,88px);
     border-bottom: 1px solid var(--line);
+  }
+  @media(max-width:900px){
+    .article-hero{ padding-top: clamp(132px,18vh,160px); }
+  }
+  @media(max-width:560px){
+    .article-hero{ padding-top: 116px; }
   }
   .back-link{
     display: inline-flex;
