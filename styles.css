@@ -274,6 +274,15 @@ body.no-emblems .contact-motif{display:none}
 .problem-body .point{font-size:calc(20px * var(--scale));color:var(--ink);margin-top:.85em}
 .problem-body p:not(.point){font-size:calc(18px * var(--scale));margin-top:.8em;max-width:52ch}
 
+/* ---------- Credential badges ---------- */
+.credential-badges{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:1.8em}
+.credential-badge{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:#fff;border-radius:var(--radius-sm);
+  padding:.55em 1em;
+}
+.credential-badge img{height:36px;width:auto;display:block}
+
 /* ---------- Photo interlude ---------- */
 .interlude-figure{aspect-ratio:16/9;max-width:860px;margin-inline:auto;border-radius:var(--radius);overflow:hidden}
 .interlude-figure .figure-img{border-radius:0}
