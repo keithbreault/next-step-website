@@ -375,7 +375,9 @@ body.no-emblems .contact-motif{display:none}
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--mint);background:color-mix(in oklab,var(--bg) 40%,#000 4%)}
 .field textarea{resize:vertical;min-height:120px}
 .form .btn-primary{justify-content:center;margin-top:6px;width:100%;padding-block:.95em}
-.form-note{font-size:calc(14px * var(--scale));color:var(--ink-mute);text-align:center}
+.form-note{font-size:calc(14px * var(--scale));color:var(--ink-mute);text-align:center;margin-top:14px}
+.form-note a{color:var(--mint);text-decoration:underline}
+.form-note a:hover{color:var(--ink)}
 .form-success{
   display:none;padding:clamp(28px,4vw,46px);border:1px solid var(--line);
   border-radius:var(--radius);background:color-mix(in oklab,var(--mint) 7%,transparent);
