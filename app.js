@@ -87,6 +87,16 @@
     });
   }
 
+  /* ---- SMS consent checkbox gates the submit button ---- */
+  var smsConsent = document.getElementById('smsConsent');
+  var contactSubmit = document.getElementById('contactSubmit');
+  if (smsConsent && contactSubmit) {
+    contactSubmit.disabled = !smsConsent.checked;
+    smsConsent.addEventListener('change', function () {
+      contactSubmit.disabled = !smsConsent.checked;
+    });
+  }
+
   /* ============================================================
      REVIEWS
      The live Elfsight Google Reviews widget is connected, so we simply
