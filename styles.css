@@ -512,7 +512,7 @@ body.no-emblems .contact-motif{display:none}
 }
 .stack-kicker .k-label,.stack-kicker .k-value{
   font-family:var(--head-font);font-weight:var(--head-weight);
-  font-size:calc(24px * var(--scale));letter-spacing:-.01em;
+  font-size:clamp(26px,3.2vw,40px);letter-spacing:-.01em;
 }
 .stack-kicker .k-label{color:var(--ink);text-align:right}
 .stack-kicker .k-value{color:var(--mint);text-align:left}
@@ -534,5 +534,5 @@ body.no-emblems .contact-motif{display:none}
 @media (max-width:560px){
   .stack-head h2{font-size:clamp(28px,7.5vw,40px)}
   .stack-kicker{column-gap:.3em;padding:22px 16px}
-  .stack-kicker .k-label,.stack-kicker .k-value{font-size:calc(17px * var(--scale))}
+  .stack-kicker .k-label,.stack-kicker .k-value{font-size:calc(18px * var(--scale))}
 }
