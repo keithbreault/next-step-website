@@ -280,4 +280,55 @@
             </div>
             <div class="field">
               <label for="message">How can we help?</label>
-              <textarea id="message" name="message" placeholder="Tell us a little about who we'd be helping, and where you are in the [+2237 bytes at .content[1].resource.text]
+              <textarea id="message" name="message" placeholder="Tell us a little about who we'd be helping, and where you are in the journey." required></textarea>
+            </div>
+            <div class="field field-consent">
+              <label for="smsConsent">
+                <input type="checkbox" id="smsConsent" name="smsConsent" required />
+                <span>By checking this box, you agree to receive conversational text messages from Next Step Senior Consulting, LLC. Reply STOP to opt out; Reply HELP for support; Message and data rates apply; Messaging frequency may vary. Visit <a href="https://next-step.place/privacy" target="_blank" rel="noopener noreferrer">https://next-step.place/privacy</a> for the privacy policy and <a href="https://next-step.place/privacy" target="_blank" rel="noopener noreferrer">https://next-step.place/privacy</a> for the Terms of Service.</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contactSubmit" disabled>Send message</button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <h3>Thank you —</h3>
+            <p>Your message is on its way, and we'll be in touch personally, soon. Prefer to talk now? Call us at 540.318.7000.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <img src="assets/logo-full.png" alt="Next Step Senior Consulting" />
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <a href="tel:15403187000">540.318.7000</a>
+          <a href="mailto:info@next-step.place?bcc=keith@next-step.place">info@next-step.place</a>
+        </div>
+        <div class="footer-col">
+          <h3>Serving</h3>
+          <p>The Valley and Central Virginia</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Next Step Senior Consulting, LLC</span>
+      <span>Independent living · Assisted living · Memory care · <a href="privacy.html">Privacy Policy</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script src="app.js"></script>
+
+</body>
+</html>
