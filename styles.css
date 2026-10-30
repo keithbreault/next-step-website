@@ -511,8 +511,8 @@ body.no-emblems .contact-motif{display:none}
   background:color-mix(in oklab,var(--mint) 7%,transparent);
 }
 .stack-kicker .k-label,.stack-kicker .k-value{
-  font-family:var(--head-font);font-weight:var(--head-weight);
-  font-size:clamp(26px,3.2vw,40px);letter-spacing:-.01em;
+  font-family:var(--body-font);font-weight:400;font-style:normal;
+  font-size:calc(21px * var(--scale));letter-spacing:-.01em;
 }
 .stack-kicker .k-label{color:var(--ink);text-align:right}
 .stack-kicker .k-value{color:var(--mint);text-align:left}
@@ -530,9 +530,10 @@ body.no-emblems .contact-motif{display:none}
     border-left:2px solid color-mix(in oklab,var(--mint) 35%,transparent);
   }
   .stack-do{order:2}
+  .stack-kicker .k-label,.stack-kicker .k-value{font-weight:500}
 }
 @media (max-width:560px){
   .stack-head h2{font-size:clamp(28px,7.5vw,40px)}
   .stack-kicker{column-gap:.3em;padding:22px 16px}
-  .stack-kicker .k-label,.stack-kicker .k-value{font-size:calc(18px * var(--scale))}
+  .stack-kicker .k-label,.stack-kicker .k-value{font-size:calc(21px * var(--scale))}
 }
