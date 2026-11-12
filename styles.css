@@ -421,6 +421,16 @@ body.no-emblems .contact-motif{display:none}
 .footer-col a:hover{color:var(--mint)}
 .footer-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:30px;color:var(--ink-mute);font-size:calc(14px * var(--scale))}
 
+/* Homepage footer only (scoped to .footer-home) */
+.footer-home .footer-top img{height:clamp(135px,15vw,192px)}
+.footer-home .footer-cols{display:flex;flex-direction:column;gap:30px}
+.footer-home .footer-col h3{font-size:calc(21px * var(--scale));margin-bottom:.6em}
+.footer-home .footer-pair{margin-bottom:1.15em}
+.footer-home .footer-pair:last-child{margin-bottom:0}
+.footer-home .footer-pair p,.footer-home .footer-pair a{margin-bottom:.1em}
+.footer-home .footer-col a.footer-phone{color:var(--mint)}
+.footer-home .footer-col a.footer-phone:hover{color:var(--ink)}
+
 /* ---------- Responsive ---------- */
 @media (max-width:900px){
   .hero{padding-top:clamp(118px,16vh,158px)}
