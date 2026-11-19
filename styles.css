@@ -547,3 +547,76 @@ body.no-emblems .contact-motif{display:none}
   .stack-kicker{column-gap:.3em;padding:22px 16px}
   .stack-kicker .k-label,.stack-kicker .k-value{font-size:calc(21px * var(--scale))}
 }
+
+/* ============================================================
+   Centered layout (site-wide alignment pass)
+   Section headings, text blocks, badges, cards and footer are
+   centered on desktop and mobile. Form fields stay left-aligned
+   for readability but the form itself is centered.
+   ============================================================ */
+/* Eyebrows get a matching trailing rule so they read balanced when centered */
+.eyebrow::after{content:"";width:26px;height:1px;background:var(--accent);opacity:.7}
+.section-emblem{margin-left:auto;margin-right:auto}
+
+/* Hero */
+.hero-copy{text-align:center;display:flex;flex-direction:column;align-items:center}
+.hero .cta-row{justify-content:center}
+.hero-tagline{justify-content:center}
+
+/* Problem + About (shared .problem-body) */
+.problem-body{margin-inline:auto;text-align:center}
+.problem-body p:not(.point){margin-inline:auto}
+.credential-badges{justify-content:center}
+
+/* How it works */
+.how-head{justify-content:center;text-align:center}
+.steps{max-width:760px;margin-inline:auto}
+.step{grid-template-columns:1fr;gap:10px;text-align:center;justify-items:center}
+.step .num{padding-top:0}
+.step .point,.step .more{margin-inline:auto}
+
+/* Value stack */
+.stack-head{flex-direction:column;align-items:center;text-align:center}
+.stack-head-text{margin-inline:auto}
+.stack-head-photo{margin:0 auto}
+
+/* Why free */
+.free-inner{grid-template-columns:1fr;justify-items:center;text-align:center;max-width:760px;margin-inline:auto}
+.free-band .detail{margin-inline:auto}
+.free-points{justify-items:center}
+.free-point{grid-template-columns:1fr;justify-items:center;gap:10px}
+.free-point p{margin-inline:auto}
+
+/* Contact */
+.contact-grid{grid-template-columns:1fr;justify-items:center;max-width:680px;margin-inline:auto}
+.contact-grid > div{width:100%}
+.contact-grid > .reveal:first-child{text-align:center}
+.contact .lede{margin-inline:auto}
+.contact-direct{justify-items:center}
+.loc-list{justify-content:center}
+.contact-motif{display:none}
+
+/* Footer */
+.footer-bottom{justify-content:center;text-align:center;column-gap:28px}
+
+@media (max-width:760px){
+  .stack-head{align-items:center}
+  .stack-row{justify-items:center;text-align:center}
+  .stack-burden{padding-left:0;border-left:none}
+  .stack-do{justify-content:center}
+  .footer-bottom{flex-direction:column;align-items:center;gap:8px}
+}
+
+/* Blog, article and privacy pages: centered page heads and content columns */
+.blog-hero .wrap,.legal-hero .wrap,.article-hero .wrap{text-align:center}
+.blog-hero .wrap h1,.blog-hero .wrap p,.article-hero .wrap h1{margin-inline:auto}
+.wrap .post-card{margin-inline:auto;text-align:center;justify-items:center}
+.wrap .post-card .excerpt{margin-inline:auto}
+.wrap .article-body{margin-inline:auto}
+.article-body .article-cta{text-align:center}
+.article-body .article-cta p{margin-inline:auto}
+.article-cta .cta-row-article{justify-content:center}
+@media (max-width:560px){
+  .eyebrow{letter-spacing:.16em;gap:.55em}
+  .eyebrow::before,.eyebrow::after{width:16px}
+}
