@@ -352,6 +352,8 @@ body.no-emblems .contact-motif{display:none}
   border:1px solid var(--line);border-radius:999px;
   padding:.55em 1.15em;
 }
+.loc-chip a{color:var(--mint);white-space:nowrap}
+.loc-chip a:hover{color:var(--ink)}
 
 /* ---------- Contact ---------- */
 .contact{background:var(--bg-3);border-top:1px solid var(--line-soft)}
@@ -425,11 +427,11 @@ body.no-emblems .contact-motif{display:none}
 .footer-home .footer-top img{height:clamp(135px,15vw,192px)}
 .footer-home .footer-cols{display:flex;flex-direction:column;gap:30px}
 .footer-home .footer-col h3{font-size:calc(21px * var(--scale));margin-bottom:.6em}
-.footer-home .footer-pair{margin-bottom:1.15em}
-.footer-home .footer-pair:last-child{margin-bottom:0}
-.footer-home .footer-pair p,.footer-home .footer-pair a{margin-bottom:.1em}
-.footer-home .footer-col a.footer-phone{color:var(--mint)}
-.footer-home .footer-col a.footer-phone:hover{color:var(--ink)}
+.footer-pair{margin-bottom:1.15em}
+.footer-pair:last-child{margin-bottom:0}
+.footer-pair p,.footer-pair a{margin-bottom:.1em}
+.footer-col a.footer-phone{color:var(--mint)}
+.footer-col a.footer-phone:hover{color:var(--ink)}
 
 /* ---------- Responsive ---------- */
 @media (max-width:900px){
